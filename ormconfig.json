@@ -5,11 +5,11 @@
   "username": "root",
   "password": "",
   "database": "test-api",
-  "entities": ["dist/entity/**/*.js"],
+  "entities": ["dist/**/*.entity{.ts,.js}"],
   "synchronize": true,
   "migrationsTableName": "migrations",
   "migrations": ["migration/*.ts"],
   "cli": {
-    "migrationsDir": "migration"
+    "migrationsDir": "src/migration"
   }
 }
